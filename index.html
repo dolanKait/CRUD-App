@@ -3,15 +3,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD</title>
+    <title>Real Housewives Hall of Fame</title>
 </head>
 <body>
-    <h1>WELCOME</h1>
-<form action="/quotes" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="quote" name="quote">
-    <button type="submit">Submit</button>
-</form>
-<script src ="server.js"></script>
+    <div class="container">
+        <form action="/quotes" method="POST">
+            <textarea rows="4" cols="50" id="hwquote" wrap="hard" placeholder="Quote"></textarea> 
+            <input type="text" name="name" placeholder="Source" style="display: block;">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   <script src="server.js"></script> 
 </body>
 </html>
